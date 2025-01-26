@@ -30,7 +30,7 @@ function createTree(element, data) {
     list.append(item);
 
     if (typeof data[key] === 'object') {
-      createTree(list, data[key]);
+      createTree(item, data[key]);
     }
   }
 
